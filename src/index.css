@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f7fafc;
+  font-family: "Inter", system-ui;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@layer utilities {
+  .input {
+    @apply w-full h-full bg-transparent outline-none placeholder:text-gray font-medium font-inter text-base;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #000319;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbacf9;
+  border-radius: 3px;
+}
