@@ -7,6 +7,7 @@
 body {
   background-color: #f7fafc;
   font-family: "Inter", system-ui;
+  scroll-behavior: smooth;
 }
 
 @layer components {
@@ -30,4 +31,12 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #cbacf9;
   border-radius: 3px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
 }
