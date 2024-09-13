@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { navigationLinks } from "../../constants";
 import { useEffect, useState } from "react";
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   const [focusedLink, setFocusedLink] = useState<string | null>(null);
 
   useEffect(() => {

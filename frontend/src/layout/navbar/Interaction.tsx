@@ -38,7 +38,7 @@ const Icons = ({ isTabletOrMobile }: { isTabletOrMobile: boolean }) => {
   );
 };
 
-const Interaction = () => {
+const Interaction: React.FC = () => {
   const { isTabletOrMobile } = Breakpoints();
 
   return (
